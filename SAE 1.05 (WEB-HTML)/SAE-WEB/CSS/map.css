@@ -1,0 +1,10 @@
+.map {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.map:hover {
+  outline: 1px solid var(--primary);
+}

@@ -1,0 +1,78 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+  border-radius: 15px;
+  height: 300px;
+}
+
+.card img {
+  width: 100%;
+  transform: translateY(-30%);
+}
+
+.card h2 {
+  padding: 20px;
+  z-index: 20;
+  background-color: var(--white);
+}
+
+.card h2 span {
+  font-weight: bold;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.choice h2 {
+  font-weight: bold;
+}
+
+.choice ul {
+  display: flex;
+  gap: 10px;
+}
+
+.choice input, .choice label {
+  cursor: pointer;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+}
+
+.payment button {
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.soumettre-suggestion {
+  display: flex;
+  justify-content: center;
+}
+
+.soumettre-suggestion button {
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 50px;
+}

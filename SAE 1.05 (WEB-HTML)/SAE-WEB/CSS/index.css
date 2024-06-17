@@ -1,0 +1,169 @@
+@import url('nav.css');
+@import url('title.css');
+@import url('map.css');
+@import url('textarea.css');
+@import url('payment.css');
+
+/* :root = La racine du site, TOUT le style par défaut */
+:root {
+  /* -- pour définir une variable (taille, couleur, peu importe) */
+  --primary: rgb(224, 78, 78);
+  --white: #fff;
+  --black: rgb(17, 16, 16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Arial';
+  display: flex;
+  flex-direction: column;
+  
+  height: 100%;
+  gap: 50px;
+
+  justify-content: start;
+  backdrop-filter: blur(10px);
+}
+
+/* ------------- HEADER ------------ */
+
+header {
+  /* var pour réutiliser la variable */
+  background-color: var(--white);
+  font-family: "Verdana";
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  align-items: stretch;
+}
+
+header nav a {
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s, color 0.2s;
+}
+
+header nav a.active, header nav a:hover:not(.logo) {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+header nav a img {
+  width: 100px;
+}
+
+header nav .logo {
+  margin-right: auto;
+}
+
+/* ------------- MAIN ------------ */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  margin: 0 400px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+main .kebabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main .kebab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc(100% / 3 - 20px);
+  /* L'ombre des boxs  */
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+
+  transition: transform 0.2s;
+}
+
+main .kebab:hover {
+  transform: scale(1.01);
+}
+
+main .kebab h3 {
+  padding: 20px;
+}
+
+main .kebab img {
+  width: 100%;
+}
+
+.about-us {
+  text-align: left;
+}
+
+/* ------------- FOOTER ------------ */
+
+footer {
+  margin-top: auto;
+  background-color: var(--primary);
+}
+footer nav a:hover{
+  background-color: var(--white);
+  color: var(--primary);
+}
+/* ------------- Responsive ------------ */
+
+@media screen and (max-width: 1200px) {
+  main {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+  main .kebab {
+    flex-basis: auto;
+  }
+
+  main .kebab img {
+    width: 200px;
+  }
+
+  main .map {
+    width: 100%;
+  }
+}

@@ -1,0 +1,79 @@
+
+.flex-general{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.menu{
+  flex: auto;
+  background-color: rgb(255, 0, 0);
+  width: 20%;
+}
+
+.mainpage{
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+}
+
+.zonepub{
+  flex: auto;
+  background-color:rgb(255, 0, 0);
+  width: 20%;
+}
+
+.menu-container{
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.tout,.classique,.vegetarien,.halal,.allergenes{
+  flex: auto;
+  background-color: white;
+  margin-bottom: 5%;
+}
+.topmain{
+  align-items: center;
+
+}
+.botmain{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.imagekebab{
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.navigation {
+  height:100px;
+  text-align: center;
+  font-size: 30px ;
+}
+
+
+
+/************************************/
+/*   Boutons affichage des menus    
+
+.classique
+{
+  outline:none;
+  cursor:pointer;
+}
+.classique:focus + .menuvegetarien1
+{
+  display:block;
+  display:none;
+}
+
+*/

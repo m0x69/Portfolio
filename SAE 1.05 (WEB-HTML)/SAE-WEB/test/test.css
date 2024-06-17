@@ -1,0 +1,37 @@
+.clicker {
+    width:100px;
+    height:100px;
+    background-color:blue;
+    outline:none;
+    cursor:pointer;
+    }
+.hiddendiv{
+    height:200px;
+    background-color:green;
+    }
+
+
+.clicker:focus + .hiddendiv{
+    display:block;
+    display:none;
+    }
+
+
+
+.clicker2 {
+    width:100px;
+    height:100px;
+    background-color:blue;
+    outline:none;
+    cursor:pointer;
+    }
+
+.hiddendiv2{
+    height:200px;
+    background-color:rgb(255, 0, 0);
+    }
+ 
+.clicker2:focus + .hiddendiv2{
+    display:block;
+    display:none;
+    }
