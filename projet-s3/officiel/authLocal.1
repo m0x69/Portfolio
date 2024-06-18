@@ -1,0 +1,53 @@
+.TH authLocal 1 "Version 1.0" "21/02/2024"
+.SH NOM
+authLocal - Gestion d'utilisateurs
+
+.SH SYNOPSIS
+.LP
+.PP
+.B #include <stdio.h>
+.PP
+.B #include <stdlib.h>
+.PP
+.PP
+.B void registerUser(char* username, const char* password);
+.PP
+.B int userCheck(char* username);
+.PP
+.B int passCheck(char* password);
+
+[\fIOPTION\fR]
+
+.SH DESCRIPTION
+Ce programme permet de gerer les utilisateurs. Vous pouvez inscrire un nouvel utilisateur, vous connecter en tant qu'utilisateur existant, ou quitter le programme.
+
+.SH OPTIONS
+.TP
+.B 1
+Pour inscrire un nouvel utilisateur.
+
+.TP
+.B 2
+Pour se connecter en tant qu'utilisateur existant.
+
+.TP
+.B 3
+Pour quitter le programme.
+
+.SH EXEMPLES
+Pour executer le programme en tant que super-utilisateur :
+.B sudo ./nom_de_votre_executable
+
+La commande sudo est indispensable pour acceder au fichier /etc/shadow.
+Ensuite, suivez les instructions affichees à l'ecran pour l'inscription, la connexion ou pour quitter le programme.
+
+
+.SH VOIR AUSSI
+man(1), sudo(8), crypt(3), shadow(5)
+
+.SH AUTEURS
+Aziz, Ines, Mohcine <aziz.melliti@etu.univ-lyon1.fr>
+
+.SH COLOPHON
+Cette page fait partie de la documentation de authLocal. Pour signaler des anomalies, veuillez contacter <aziz.melliti@etu.univ-lyon1.fr>.
+
